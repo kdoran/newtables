@@ -1,0 +1,8 @@
+{
+    "preset": "airbnb",
+    "requireCurlyBraces": false,
+    "maximumLineLength": false,
+    "requireShorthandArrowFunctions": false,
+    "requirePaddingNewLinesBeforeLineComments": false,
+    "requirePaddingNewLinesAfterBlocks": false
+}

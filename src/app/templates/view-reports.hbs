@@ -1,0 +1,18 @@
+<div class="row">
+  <a href="#/edit-report/" class="btn btn-primary">Create New Report</a>
+</div>
+<br>
+<br>
+{{#if this.length}}
+{{#each this}}
+<div class="row">
+  Report <strong>{{this.title}}</strong> created {{$showtimestamp this._id}} <a href="#/edit-report/{{this._id}}">edit report <strong>{{this.title}}</strong></a> |
+  <a href="#/edit-submission/{{this._id}}" class="btn btn-default">Submit <strong>{{this.title}}</strong></a>
+</div>
+{{/each}}
+{{else}}
+<br><br>
+<div>
+  No reports found.
+</div>
+{{/if}}
