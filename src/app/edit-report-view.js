@@ -16,11 +16,11 @@ export default Backbone.View.extend({
       .then(() => {
         this.render();
       });
-      this.reportModel.on('sync', () => {
-        Backbone.history.navigate('edit-report/' + this.reportModel.get('_id'));
-        this.toggleLoading();
-      });
     }
+    this.reportModel.on('sync', () => {
+      Backbone.history.navigate('edit-report/' + this.reportModel.get('_id'));
+      this.toggleLoading();
+    });
   },
 
   events: {

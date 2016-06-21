@@ -21,9 +21,9 @@ const Router = Backbone.Router.extend({
     '': 'viewReportsRoute',
     'edit-report/': 'editReportRoute',
     'edit-report/:id': 'editReportRoute',
-    'view-submission/:docId/': 'viewSubmissionRoute',
-    'edit-submission/:reportId/': 'editSubmissionRoute',
-    'edit-submitReport/:reportId/:docId': 'editSubmissionRoute',
+    'view-submission/:docId': 'viewSubmissionRoute',
+    'edit-submission/:reportId': 'editSubmissionRoute',
+    'edit-submission/:reportId/:docId': 'editSubmissionRoute',
   },
 
   titles: {

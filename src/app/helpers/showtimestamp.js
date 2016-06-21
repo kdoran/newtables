@@ -5,7 +5,7 @@ module.exports = function (docId) {
   if (docId) {
     let docIdSplit = docId.split('_');
     if (docIdSplit.length) {
-      return Moment().calendar(docIdSplit[1], { sameElse: 'LL' }).toLowerCase();
+      return Moment(docIdSplit[1]).calendar().toLowerCase();
     }
   }
   return result;
